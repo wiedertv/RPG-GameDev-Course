@@ -10,6 +10,8 @@ public class Mover : MonoBehaviour
     [field: SerializeField] private Transform target;
 
 
+    private Ray lastRay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,15 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<NavMeshAgent>().destination = target.position;
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            // get main camera and use ScreenPointToRay in the mouse position, to know where the player is clicking.
+            lastRay = Camera.main.ScreenPointToRay(Input.mousePosition);         
+        }
+
+        Debug.DrawRay(lastRay.origin, lastRay.direction* 100);
+        // GetComponent<NavMeshAgent>().destination = target.position;
+
     }
 }
