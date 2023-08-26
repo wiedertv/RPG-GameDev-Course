@@ -2537,15 +2537,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368796779356419569, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.76
+      value: 75.08
       objectReference: {fileID: 0}
     - target: {fileID: 368796779356419569, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 368796779356419569, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48.87
+      value: 45.54
       objectReference: {fileID: 0}
     - target: {fileID: 368796779356419569, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2586,43 +2586,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5498086921083044347, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
   m_PrefabInstance: {fileID: 4838950522982052001}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4838950522982052003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838950522982052002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fede2fe2866229e478cc990eab96e242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!4 &4838950522982052007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 368796779356419569, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
   m_PrefabInstance: {fileID: 4838950522982052001}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &4838950522982052008
-NavMeshAgent:
+--- !u!95 &4838950522982052010
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4838950522982052002}
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 12
-  m_Acceleration: 20
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90a2b4ad8f526e545af4da30b5ef290a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
