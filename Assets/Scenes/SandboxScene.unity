@@ -2575,6 +2575,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4838950522982052008, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_Speed
+      value: 5.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838950522982052008, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_Acceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838950522982052008, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 5498086921083044347, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2600,7 +2612,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4838950522982052002}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
   m_Controller: {fileID: 9100000, guid: 90a2b4ad8f526e545af4da30b5ef290a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

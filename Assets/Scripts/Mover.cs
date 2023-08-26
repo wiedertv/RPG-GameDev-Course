@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,8 +18,23 @@ public class Mover : MonoBehaviour
             MoveToCursor();
         }
 
+        UpdateAnimator();
+
         // GetComponent<NavMeshAgent>().destination = target.position;
 
+    }
+
+    private void UpdateAnimator()
+    {
+        /// in this case we are getting the global velocity (global transform)
+        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+
+        /// here we convert the transform of that velocity to locale 
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+
+        float speed = localVelocity.z;
+
+        GetComponent<Animator>().SetFloat("Movement", speed);
     }
 
     private void MoveToCursor()
