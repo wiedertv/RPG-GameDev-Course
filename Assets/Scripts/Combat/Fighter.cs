@@ -55,6 +55,7 @@ namespace RPG.Combat
             if (timeSinceLastAttack < 0)
             {
                 /// This will trigger the Hit() event
+                GetComponent<Animator>().ResetTrigger("CancelAttack");
                 GetComponent<Animator>().SetTrigger("Attack");
                 timeSinceLastAttack = timeBetweenAttacks;
             }   
@@ -88,6 +89,7 @@ namespace RPG.Combat
         {
             target = null;
             GetComponent<Animator>().SetTrigger("CancelAttack");
+            GetComponent<Animator>().ResetTrigger("Attack");
         }
 
 
