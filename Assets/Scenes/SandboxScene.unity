@@ -1584,9 +1584,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1647823627176669466, guid: d1cf8fbc6d216e549aa30ac609b22418, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
     - target: {fileID: 2457097655943185870, guid: d1cf8fbc6d216e549aa30ac609b22418, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569080216913524301, guid: d1cf8fbc6d216e549aa30ac609b22418, type: 3}
+      propertyPath: health
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4461667930901250030, guid: d1cf8fbc6d216e549aa30ac609b22418, type: 3}
       propertyPath: m_Controller

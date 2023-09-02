@@ -112,6 +112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5635411458092500298, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 308649801174300220, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
@@ -129,7 +133,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2457097655943185870}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
   m_Controller: {fileID: 9100000, guid: 90a2b4ad8f526e545af4da30b5ef290a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

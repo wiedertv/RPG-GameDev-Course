@@ -17,9 +17,8 @@ namespace RPG.Combat
         [field: SerializeField]
         private float weaponDamge = 5f;
 
-        Transform target;
+        Health target;
         float timeSinceLastAttack = 0f;
-        Health healthTarget;
 
         private void Awake()
         {
@@ -38,7 +37,7 @@ namespace RPG.Combat
 
                 if (!GetIsInRange())
                 {
-                    GetComponent<Mover>().MoveTo(target.position);
+                    GetComponent<Mover>().MoveTo(target.transform.position);
 
                 }
                 else
@@ -51,34 +50,37 @@ namespace RPG.Combat
 
         private void AttackBehaviour()
         {
-            if(timeSinceLastAttack < 0)
+            if (target.IsDeath) return;
+            transform.LookAt(target.transform);
+            if (timeSinceLastAttack < 0)
             {
                 /// This will trigger the Hit() event
                 GetComponent<Animator>().SetTrigger("Attack");
                 timeSinceLastAttack = timeBetweenAttacks;
-                healthTarget = target.GetComponent<Health>();
             }   
         }
         ///  Animation Event
         private void Hit()
         {
-            healthTarget.TakeDamage(weaponDamge);
+            target.TakeDamage(weaponDamge);
         }
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
         }
 
         public void Attack(CombatTarget combatTarget)
         {
             GetComponent<ActionScheduler>().ActionStart(this);
-            target = combatTarget.transform;
+            target = combatTarget.GetComponent<Health>();
+
         }
 
         public void Cancel()
         {
             target = null;
+            GetComponent<Animator>().SetTrigger("CancelAttack");
         }
 
 
