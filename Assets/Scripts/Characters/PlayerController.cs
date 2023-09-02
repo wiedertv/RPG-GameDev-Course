@@ -25,15 +25,16 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if(target != null && !target.GetComponent<PlayerController>())
+                if (!GetComponent<Fighter>().CanAttack(target))
                 {
-                    if(Input.GetMouseButtonDown(0)) 
-                    {
-                        GetComponent<Fighter>().Attack(target);
-                    }
-                    return true;
-
+                    continue;
                 }
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    GetComponent<Fighter>().Attack(target);
+                }
+                return true;
             }
             return false;
         }

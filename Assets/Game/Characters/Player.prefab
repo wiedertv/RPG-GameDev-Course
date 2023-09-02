@@ -116,7 +116,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7831224082609164066, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_Height
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831224082609164066, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_Radius
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831224082609164066, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
+      propertyPath: m_Center.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6413543944430989679, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf9bcaa0e3019ee4e892b8b9d815bb00, type: 3}
 --- !u!1 &751439172106316094 stripped
 GameObject:
@@ -144,19 +157,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-6450437444950069776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751439172106316094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 244c95b7dd9d4ff4283cbd3b58affd9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &-3099707833804921215
 MonoBehaviour:
   m_ObjectHideFlags: 0
